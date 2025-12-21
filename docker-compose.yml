@@ -1,0 +1,6 @@
+services:
+  app:
+    build: .
+    container_name: berbagi_now
+    ports:
+      - "8000:9000"
