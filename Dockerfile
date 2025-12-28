@@ -28,7 +28,7 @@ RUN mkdir -p bootstrap/cache storage
 RUN chown -R www-data:www-data /var/www \
     && chmod -R 775 storage bootstrap/cache
 
-# Install dependency
+# Install dependency Laravel
 RUN composer install --no-dev --optimize-autoloader
 
 EXPOSE 9000
